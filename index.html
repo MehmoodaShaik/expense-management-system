@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Expense Management System</h1>
+        <form id="expense-form">
+            <input type="text" id="expense-name" placeholder="Expense Name" required>
+            <input type="number" id="expense-amount" placeholder="Amount" required>
+            <select id="expense-category">
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Entertainment">Entertainment</option>
+                <option value="Others">Others</option>
+            </select>
+            <button type="submit">Add Expense</button>
+        </form>
+
+        <h2>All Expenses</h2>
+        <ul id="expense-list"></ul>
+
+        <div id="total-expenses">
+            <h3>Total: <span id="total-amount">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
